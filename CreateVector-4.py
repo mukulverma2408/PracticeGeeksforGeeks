@@ -1,0 +1,7 @@
+#Write a NumPy program to create a 3x4 matrix filled with values from 10 to 21
+import numpy as np
+arr = np.arange(10,22).reshape(3,4)
+print(arr)
+print(arr.shape)
+arr2 = np.identity(3)
+print(arr2)
