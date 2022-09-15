@@ -1,12 +1,11 @@
 #Write a Python program to push all zeros to the end of a list
 ######PROBLEM#################
 def PushZero(lst):
-    for i in lst:
-        print(i)
-        if i == 0:
-            lst.remove(i)
-            lst.append(0)
-            print(lst)
-    print(lst)
+    lstzero = [i for i in lst if i == 0]
+    lstnonzero = [i for i in lst if i != 0]
+    #print(lstzero)
+    #print(lstnonzero)
+    lstnonzero.extend(lstzero)
+    return (lstnonzero)
 
-PushZero([0, 2, 3, 6, 0, 9, 11, 10])
+print(PushZero([0, 2, 0, 6, 0, 9, 11, 0]))
