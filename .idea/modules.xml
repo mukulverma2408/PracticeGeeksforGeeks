@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ImportingData.iml" filepath="$PROJECT_DIR$/.idea/ImportingData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../W3ResourceExercise/.idea/W3ResourceExercise.iml" filepath="$PROJECT_DIR$/../W3ResourceExercise/.idea/W3ResourceExercise.iml" />
     </modules>
   </component>
 </project>
