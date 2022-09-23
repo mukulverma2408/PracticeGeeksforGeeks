@@ -1,9 +1,9 @@
 #Create an inner function
-#HAving Issues in this inner function
-def Names(x, y):
-    def Conct():
-        op = x + y
-        return op
-    print(op+'Developer')
+def Outer(x, y):
+    def Inner(x, y):
+        return (x+y)
+    z = Inner(x, y)
+    return (z+'Developer')
 
-Names('Mukul', 'Verma')
+print(Outer('Mukul', 'Verma'))
+
