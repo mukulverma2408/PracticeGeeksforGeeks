@@ -3,7 +3,7 @@
 def ModifyElement(lst):
     for i in lst:
         if len(i) > 1:
-            for j in [i][0]
+            for j in i:
                 print(j)
         else:
             print(i)
