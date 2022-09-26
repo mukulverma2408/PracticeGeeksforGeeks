@@ -8,6 +8,6 @@ class Vehicle:
         return f"The seating capacity of a {self.name} is {capacity} passengers"
 
 class Bus(Vehicle):
-    def seating_capacity(self, capacity=50):
-
+#    def seating_capacity(self, capacity=50):
+    pass
 
