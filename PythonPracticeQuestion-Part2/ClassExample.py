@@ -21,7 +21,7 @@ class Vehicle:
 
 class ElectricVehicle(Vehicle):
     def __init__(self, brand, model, type):
-        Vehicle.__init__(brand, model, type)
+        super().__init__(brand, model, type)
         self.battery_size = 85
         self.charge_level = 0
 
@@ -32,6 +32,10 @@ class ElectricVehicle(Vehicle):
     def fuel_up(self):
         print("No fuel tank, it's an electric vehicle")
 
+
+electric_vehicle = ElectricVehicle('Tesla', 'Model3', 'Car')
+electric_vehicle.charge()
+electric_vehicle.drive()
 
 
 
