@@ -1,9 +1,13 @@
 #Remove duplicate element from a list
 import pandas as pd
 def remove_dup(lst):
-    df = pd.DataFrame(lst)
-    df2 = df.value_counts()<=1
-    print(df2)
+    mydict = {}
+    for i in lst:
+        if i in mydict.keys():
+            mydict[i] += 1
+        else:
+            mydict[i] = 1
+    print(list(mydict.keys()))
 
-l1 = [1,4,6,4,6,8,9,1,3,5]
+l1 = [1,2,3,2,1]
 remove_dup(l1)
