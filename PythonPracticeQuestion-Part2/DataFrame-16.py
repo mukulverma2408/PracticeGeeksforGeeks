@@ -1,0 +1,15 @@
+#Create a list from rows in Pandas dataframe
+import pandas as pd
+
+# Create the dataframe
+df = pd.DataFrame({'Date': ['10/2/2011', '11/2/2011', '12/2/2011', '13/2/11'],
+                   'Event': ['Music', 'Poetry', 'Theatre', 'Comedy'],
+                   'Cost': [10000, 5000, 15000, 2000]})
+print(df)
+
+lst = []
+for index, row in df.iterrows():
+    tmplst = [row.Date, row.Event, row.Cost]
+    lst.append(tmplst)
+
+print(lst)
