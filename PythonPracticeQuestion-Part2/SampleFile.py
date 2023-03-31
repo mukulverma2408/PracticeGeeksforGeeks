@@ -1,3 +1,12 @@
+import pandas as pd
+df = pd.DataFrame({'numbers': [1, 2, 3], 'colors': ['red', 'white', 'blue']},
+                  columns=['numbers', 'colors'])
+print(df)
+
+print(df.iloc[[0,2],[0,1]])
+
+
+"""
 def solution(S):
     occurrences = [0] * 26
     print(occurrences)
@@ -19,3 +28,4 @@ def solution(S):
     return best_char
 S = 'mukuisabla'
 print(solution(S))
+"""
