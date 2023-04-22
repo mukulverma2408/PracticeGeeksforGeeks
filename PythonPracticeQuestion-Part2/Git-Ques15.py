@@ -4,13 +4,17 @@
 #W 200
 
 def UserInput():
-    trans = {}
+    trans = []
     while True:
-        ip = input("Enter the transactions or just press enter if no new transacation")
+        ip = input("Enter the transactions or just press enter if no new transacation ")
         if not ip:
             break
-        val = ip.split(" ")
-        trans[val[0]] = int(val[1])
+        op, amt = ip.split(" ")
+        if op == 'D':
+            trans.append(int(amt))
+        elif op == 'W':
+            trans.append(int(amt)*-1)
     print(trans)
+    print("The final a mount in account is {0} ".format(sum(trans)))
 
 UserInput()
