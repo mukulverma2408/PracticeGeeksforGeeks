@@ -31,4 +31,9 @@ chipo['flot_price'] = new_price
 #print(chipo['flot_price'].dtype)
 
 #print(chipo.head(5))
-print(chipo['order_id'].value_counts().count())
+#print(chipo['order_id'].value_counts().count())
+
+#print(chipo.info())
+#print(chipo.head(3))
+print(sum(chipo['quantity']* chipo['flot_price'])/chipo['order_id'].count())
+#print(chipo['order_id'].count())
